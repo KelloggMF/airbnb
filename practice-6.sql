@@ -16,5 +16,7 @@
 -- | Burnside               | 10       |
 
 SELECT listings.neighborhood, COUNT(reviews.comments)
-FROM listings INNER JOIN reviews ON listings.id = reviews.listing_id;
-NOT DONE
+FROM listings INNER JOIN reviews ON listings.id = reviews.listing_id
+GROUP BY neighborhood
+ORDER BY neighborhood ASC
+LIMIT 13;

@@ -14,4 +14,5 @@
 
 SELECT neighborhood FROM listings
 GROUP BY neighborhood
-ORDER BY neighborhood ASC;
+ORDER BY neighborhood ASC
+LIMIT 10;
