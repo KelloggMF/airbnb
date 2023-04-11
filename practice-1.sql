@@ -5,3 +5,6 @@
 -- +----------+
 
 
+SELECT COUNT(comments) FROM reviews;
+
+
